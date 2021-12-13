@@ -46,7 +46,8 @@ var characterAmount = parseInt(window.prompt("How many characters do you want? P
     // this ensures they enter a valid number between 8 and 128
         if (Number.isNaN(characterAmount)) {
         alert("Please pick a number.");
-        generatePassword();
+        return;
+
       } else if (characterAmount < 8 || characterAmount > 128) {
         alert("Password length must be between 8 and 128 characters.")
         generatePassword();
